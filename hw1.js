@@ -33,8 +33,7 @@ function max(arr) {
 
 // ============ PART 2: STRING FUNCTIONS ============
 function capitalize(str) {
-  // TODO: Return string with first letter capitalized
-  // "hello" -> "Hello"
+    return str[0].toUpperCase() + str.slice(1);
 }
 
 function reverse(str) {
@@ -75,11 +74,11 @@ const student = {
   grades: [85, 92, 78, 90, 88],
 
   getAverage: function () {
-    // TODO: Return average of this.grades
+    return average(this.grades);
   },
 
   isHonorRoll: function () {
-    // TODO: Return true if average > 85
+    return this.getAverage() > 85;
   },
 };
 
