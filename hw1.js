@@ -38,14 +38,34 @@ function capitalize(str) {
 }
 
 function reverse(str) {
-  // TODO: Return the string reversed
-  // "hello" -> "olleh"
-  // Hint: str.split("").reverse().join("")
+  let newString = "";
+
+  for (let i = 0; i < str.length; i++) {
+    newString += str.charAt(str.length - i - 1);
+  }
+  return newString;
+
+  // cleaner way: return str.split("").reverse().join(""); One line!
+  // What I did above is still correct but the cleaner way is the way to go!
 }
 
 function countVowels(str) {
-  // TODO: Return count of vowels (a, e, i, o, u)
-  // "hello" -> 2
+  let count = 0;
+  str.toLowerCase(); // handles situations where you have uppercase vowels
+
+  for (let char of str) {
+    if (
+      char === "a" || // Note: I couldve also added the vowels in an array and use the includes() method.
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+
+  return count;
 }
 
 // ============ PART 3: OBJECT ============
