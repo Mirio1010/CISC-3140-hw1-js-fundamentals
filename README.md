@@ -1,6 +1,6 @@
 # Miguel Ortega
 
-## screenshot
+## screenshot output
 
 ![screenshot](/screenshots/screenshot.jpg)
 
@@ -11,4 +11,3 @@
  4. type `node hw1.js` to run file.
  5. That's it!
 
- 
